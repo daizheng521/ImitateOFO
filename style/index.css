@@ -1,0 +1,354 @@
+@charset "utf-8";
+/*工具条*/
+.toolbar{
+	width:100%;
+	height:3.5rem;
+	background-color: #fe9345;
+	margin:0 auto;
+	position: relative;
+}
+.toolbar-container{
+	width:95%;
+	height:3rem;
+	position: absolute;
+	bottom:0;
+	left:2%;
+	font-size:0px;
+}
+.toolbar-container div,.toolbar-container h1{
+	display: inline-block;
+	vertical-align:top;
+}
+.sidebar{
+	width:20%;
+	height:3rem;
+	padding:0.4rem 0 0 0;
+}
+.sidebar img{
+	width:2rem;
+	height:2.5rem;
+}
+.maintitle{
+	width:54%;
+	height:3rem;
+	font-size:1.5rem;
+	color:#fff;
+	text-align: center;
+	line-height: 3rem;
+}
+.searchAndnews{
+	width:28%;
+	height:3rem;
+}
+.searchAndnews-searchimg img{
+	width:2rem;
+	height:2rem;
+	position: absolute;
+	right:12%;
+	bottom:0.4rem;
+}
+.searchAndnews-newsimg img{
+	width:1.6rem;
+	height:1.6rem;
+	position: absolute;
+	right:1%;
+	bottom:0.7rem;
+}
+
+/*地图组件*/
+#gd-map{
+	width:100%;
+	background-color:#aff;
+}
+
+/*去除水印*/
+.amap-logo {
+     right: 0 !important;
+     left: auto !important;
+     display: none;
+}        
+.amap-copyright {
+     right: 0px !important;
+     left: auto !important;
+     visibility: hidden;
+}
+
+/*顶部信息条*/
+.message-bar{
+	width:90%;
+	height:2.8rem;
+	position:absolute;
+	left:5%;
+	background-color: #fff;
+	border-radius: 5px;
+	-webkit-box-shadow: 0px 0px 10px #c0c0c0;
+	font-size:0;
+}
+.message-bar div{
+	display:inline-block;
+	vertical-align:top;
+	
+}
+.message-bar-img{
+	width:84%;
+	height:100%;
+	margin-left:0.8rem;
+	line-height: 5rem;
+	
+}
+.message-bar-img img{
+	width:2rem;
+	height:2rem;
+}
+.message-bar-title{
+	width:80%;
+	height:2.8rem;
+	font-size:1rem;
+	line-height: 2.8rem;
+	margin-left:0.5rem;
+}
+.message-bar-title span{
+	color:#FE9345;
+}
+.message-bar-title p{
+	width:100%;
+	height:1rem;
+	color:#39f;
+}
+.message-bar-rt{
+	width:6%;
+	height:100%;
+	position: relative;
+}
+.message-bar-rt img{
+	position: absolute;
+	width:1.5rem;
+	height:1.5rem;
+	left:0;
+	top:0.6rem;
+}
+
+/*左侧侧栏*/
+.leftcolumn{
+	width:16rem;
+	height:0rem;
+	position: fixed;
+	top:0;
+	left:-16rem;
+	z-index:1;
+	background-color: #FE9345;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+	z-index:10;
+}
+.leftcolumn-img{
+	width:8rem;
+	height:7rem;
+	margin:2rem auto;
+}
+.leftcolumn-img p{
+	text-align: center;
+	color:#fff;
+}
+.leftcolumn-btn,.leftcolumn-btn1{
+	display:block;
+	width:8rem;
+	height:3rem;
+	border:1px solid #fff;
+	border-radius: 5px;
+	margin:0 auto;
+	text-align: center;
+	line-height: 3rem;
+	color:#fff;
+}
+
+.leftcolumn-img img{
+	width:8rem;
+	height:7rem;
+}
+
+.leftcolumn-mask{
+	width:100%;
+	height:0rem;
+	position: absolute;
+	top:0;
+	left:0;
+	z-index:9;
+}
+.leftcolumn-p1{
+	text-align: center;
+	padding-top:1rem;
+	color:#fff;
+}
+
+
+
+
+
+
+
+
+/*底部定位当前位置、扫码开锁、客服*/
+.footer{
+	width:90%;
+	height:4rem;
+	position: fixed;
+	bottom:1rem;
+	font-size:0;
+	margin-left:5%;
+	text-align: center;
+}
+.footer div,.footer a{
+	display: inline-block;
+	vertical-align:top;
+}
+.footer-location{
+	width:3rem;
+	height:3rem;
+	background-color:#faf;
+	border-radius: 3rem;
+	-webkit-box-shadow: 0px 0px 8px #181818;
+	position: absolute;
+	top:0.5rem;
+	left:0;
+	background: url(../image/location.png)no-repeat;
+	background-size: 3rem 3rem;
+}
+
+.footer-scan-code{
+	display:block;
+	width:60%;
+	height:4rem;
+	background-color: #FE9345;
+	border-radius: 2rem;
+	
+}
+.footer-scan-code-img{
+	width:30%;
+	height:4rem;
+	background:url(../image/scancode.png)right no-repeat;
+	background-size:2rem 2rem;
+}
+.footer-scan-code-text{
+	width:66%;
+	height:4rem;
+	font-size:1.3rem;
+	color:#fff;
+	text-align: left;
+	line-height: 4rem;
+	margin-left:4%;
+}
+
+
+
+.footer-customer-service{
+	width:3rem;
+	height:3rem;
+	line-height:4rem;
+	background: url(../image/customerservice.png) no-repeat;
+	background-size: 3rem 3rem;
+	border-radius: 3rem;
+	-webkit-box-shadow: 0px 0px 8px #181818;
+	position: absolute;
+	right:0;
+	top:0.5rem;
+}
+/*客户服务弹层*/
+.footer-customer-service-modallayer{
+	width:90%;
+	height:15rem;/*15*/
+	background-color: #fff;
+	border-radius: 5px;
+	position: fixed;
+	bottom:-15rem;
+	margin-left:5%;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+	z-index:201;
+}
+
+.footer-customer-service-modallayer-mask{
+	width:100%;
+	height:0rem;
+	position: absolute;
+	top:0rem;
+	left:0rem;
+	background-color: rgba(0,0,0,0.5);
+	z-index:200;
+}
+
+.footer-customer-service-modallayer-title{
+	width:100%;
+	height:2rem;/*2*/
+	border-bottom:0px solid #d8d8d8;
+	text-align: center;
+	line-height: 2rem;/*2*/
+	color:#909090;
+	font-size:0.8rem;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.footer-customer-service-modallayer-button{
+	width:100%;
+	height:12rem;/*12*/
+	text-align: center;
+	
+}
+
+#footer-customer-service-modallayer-button-btn{
+	width:40%;
+	height:6rem;/*6*/
+	display:inline-block;
+	vertical-align: middle;
+	font-size:0.8rem;/*0.8*/
+	color:#000;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+#footer-customer-service-modallayer-button-btn figure{
+	line-height: 2.8rem;/*2.8*/
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.footer-customer-service-modallayer-button-btn-img0{
+	display:inline-block;
+	width:1.8rem;
+	height:1.8rem;/*1.8*/
+	background: url(../image/suo.png)center no-repeat;
+	background-size:1.8rem 1.8rem;
+	vertical-align: middle;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+	
+}
+.footer-customer-service-modallayer-button-btn-img1{
+	display:inline-block;
+	width:1.8rem;
+	height:1.8rem;/*1.8*/
+	background: url(../image/guzhang.png)center no-repeat;
+	background-size:1.8rem 1.8rem;
+	vertical-align: middle;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.footer-customer-service-modallayer-button-btn-img2{
+	display:inline-block;
+	width:1.8rem;
+	height:1.8rem;/*1.8*/
+	background: url(../image/jubao.png)center no-repeat;
+	background-size:1.8rem 1.8rem;
+	vertical-align: middle;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.footer-customer-service-modallayer-button-btn-img3{
+	display:inline-block;
+	width:1.8rem;
+	height:1.8rem;/*1.8*/
+	background: url(../image/qita.png)center no-repeat;
+	background-size:1.8rem 1.8rem;
+	vertical-align: middle;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
