@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="#FE9345" name="apple-mobile-web-app-status-bar-style">
+	<meta content="telephone=no,email=no" name="format-detection">
+	<meta name="format-detection" content="telphone=no" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>扫描并解析二维码</title>
+	
+	<!--引入JQ库-->
+	<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	
+	
+</head>
+<body>
+	
+	
+	<button id="btn">点我唤起摄像头</button>
+	
+	<script type="text/javascript">
+		window.onload = function(){
+			var btn = document.getElementById('btn');
+	
+			btn.onclick = test;
+			
+			function test(){
+				navigator.getUserMedia(true);
+			}
+		}
+	</script>
+	
+</body>
+</html>

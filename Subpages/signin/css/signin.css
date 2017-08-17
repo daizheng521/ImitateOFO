@@ -1,0 +1,70 @@
+@charset "utf-8";
+/*通用样式*/
+input{
+	border:none;
+	letter-spacing:0.4rem;
+}
+input::-webkit-input-placeholder{
+    color:#c0c0c0;
+    
+}
+
+/*页面最顶端的标题*/
+.signin-title{
+	width:100%;
+	height:3rem;
+	margin:0 auto;
+	background-color: #FE9345;
+	color:#fff;
+	text-align: center;
+	line-height: 3rem;
+	font-size:1.2rem;
+}
+
+/*登录外层容器*/
+.signin-container{
+	width:90%;
+	height:10rem;
+	margin:2rem auto;
+}
+
+/*手机号*/
+.mobile-phone-number,.password-number{
+	width:100%;
+	height:3rem;
+	margin:1rem auto;
+	position: relative;
+}
+.mobile-phone-number-text,.password-number-text{
+	position: absolute;
+	width:18%;
+	height:2.4rem;
+	top:0;
+	left:0;
+	text-align:center;
+	line-height:2.8rem;
+	z-index:1;
+	background-color: #f2f2f2;
+}
+.mobile-phone-number-input,.password-number-input{
+	width:70%;
+	height:2.4rem;
+	position: absolute;
+	top:0;
+	left:0;
+	padding-left:20%;
+	background-color: #f2f2f2;
+	border-radius:5px;
+	font-size:1rem;
+}
+
+.signin-btn{
+	width:91%;
+	height:3.2rem;
+	background-color: #c0c0c0;
+	border-radius: 5px;
+	text-align: center;
+	line-height: 3rem;
+	color:#fff;
+	margin-top:2rem;
+}

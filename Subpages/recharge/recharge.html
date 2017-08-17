@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="#FE9345" name="apple-mobile-web-app-status-bar-style">
+	<meta content="telephone=no,email=no" name="format-detection">
+	<meta name="format-detection" content="telphone=no" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>押金充值</title>
+	<link rel="stylesheet" type="text/css" href="../../style/base.css" />
+	<link rel="stylesheet" type="text/css" href="css/recharge.css"/>
+	<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/recharge.js" type="text/javascript" charset="utf-8"></script>
+	<link rel="shortcut icon" href="../../logo.ico"/>
+</head>
+<body>
+	<!--最顶部标题-->
+	
+	<div class="top-title">
+		<a class="top-title-return" href="../../Subpages/register/register.html"></a>
+		<div class="top-title-text">押金充值</div>
+	</div>
+	
+	<!--进度条-->
+	<div class="progress-bar">
+		<div class="progress-bar-top">
+			<div class="progress-bar-top-div">
+				<div class="progress-bar-top-div-true1">
+					<img src="img/true.png"/>
+				</div>
+			</div>
+			<div class="progress-bar-top-div">
+				<div class="progress-bar-top-div-underway">
+					<div class="progress-bar-top-div-underway-solid"></div>
+				</div>
+			</div>
+			<div class="progress-bar-top-div">
+				<div class="progress-bar-top-div-unfinished"></div>
+			</div>
+			<div class="progress-bar-top-div">
+				<div class="progress-bar-top-div-unfinished"></div>
+			</div>
+			
+		</div>
+		<div class="progress-bar-top-line"></div>
+		<div class="progress-bar-bottom">
+			<div class="progress-bar-bottom-text">手机验证</div>
+			<div class="progress-bar-bottom-text">押金充值</div>
+			<div class="progress-bar-bottom-text">实名认证</div>
+			<div class="progress-bar-bottom-text">注册成功</div>
+		</div>
+	</div>
+
+
+	<!--押金充值的提示-->
+	<div class="recharge-tips">
+		<div class="recharge-tips-container">
+			<div class="recharge-tips-img">
+				<img src="img/yajin.png"/>
+				<div class="recharge-tips-img-text">押金 <span>（可秒退）</span></div>
+			</div>
+			<div class="recharge-tips-rmb">
+				<span>￥</span>199
+			</div>
+		</div>
+	</div>
+	
+	<!--选择支付方式-->
+	<div id="paymentway">
+		
+		<div class="paymentway-wx">
+			<div class="paymentway-wx-left">
+				<img src="img/wx.png"/>
+				<div>微信支付</div>
+			</div>
+			<div class="paymentway-wx-right">
+				<input type="checkbox" name="paymentway-wx" id="paymentway-wx" value="0" checked="true"/>
+			</div>
+		</div>
+		
+		
+		
+		
+		<div class="paymentway-alipay">
+			
+			<div class="paymentway-alipay-left">
+				<img src="img/alipay.png"/>
+				<div>支付宝支付</div>
+			</div>
+			<div class="paymentway-alipay-right">
+				<input type="checkbox" name="paymentway-alipay" id="paymentway-alipay" value="1" />
+			</div>
+			
+		</div>
+	</div>
+
+
+	<!--3个文本-->
+	<div class="message-bar">
+		<ul>
+			<li>
+				<span></span>全国百万百宝任你骑
+			</li>
+			<li>
+				<span></span>押金随心退，安全秒到账
+			</li>
+			<li>
+				<span></span>完成注册领取最高30天免费骑行大礼包
+			</li>
+		</ul>
+	</div>
+
+
+	<!--充值按钮-->
+	<div class="recharge-btn">去充值</div>
+</body>
+</html>

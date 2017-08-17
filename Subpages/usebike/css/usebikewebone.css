@@ -1,0 +1,78 @@
+@charset "utf-8";
+/*初始化*/
+input::-webkit-input-placeholder{ 
+	color:#c0c0c0; 
+} 
+table { 
+ border-collapse:collapse; 
+ border-spacing:0; 
+} 
+th,td { 
+ padding: 0; 
+}
+
+
+/*输入车牌号使用车辆最外层的容器*/
+.usebikeweb{
+	width:90%;
+	height:20rem;
+	border-radius: 0.2rem;
+	-webkit-box-shadow: 0 1px 10px #c0c0c0;
+	margin:7rem auto 0;
+}
+
+
+/*一张自行车的图片*/
+.usebikeweb-img{
+	width:80%;
+	height:9rem;
+	margin:0 auto;
+	background: url(../img/bike.png)center no-repeat;
+	background-size:90% 9rem;
+}
+
+/*输入车牌号*/
+.usebikeweb-input{
+	width:90%;
+	height:3rem;
+	margin:2rem auto 0 ;
+	font-size:0;
+	position: relative;
+}
+.usebikeweb-input input{
+	width:12rem;
+	height:2.5rem;
+	font-size:1.3rem;
+	text-align: center;
+	color:#FE9345;
+	border:2px solid #FE9345;
+	border-radius: 5px;
+	background-color: #fff;
+	position: absolute;
+	left:0;
+	display:inline-block;
+	vertical-align: top;
+	
+}
+.usebikeweb-input-btn{
+	position: absolute;
+	right:0;
+	display:inline-block;
+	vertical-align: top;
+	width:5rem;
+	height:3rem;
+	background-color: #000;
+	background: url(../img/usebike.png)center no-repeat;
+	border-radius: 5px;
+}
+.usebikeweb-text{
+	width:80%;
+	height:1.8rem;
+	margin:2rem auto;
+	text-align: center;
+	line-height: 1.8rem;
+	font-size:0.8rem;
+	font-family: 'Hiragino Sans GB','DroidSans';
+}
+
+

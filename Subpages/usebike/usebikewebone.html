@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="#FE9345" name="apple-mobile-web-app-status-bar-style">
+	<meta content="telephone=no,email=no" name="format-detection">
+	<meta name="format-detection" content="telphone=no" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>使用百宝单车</title>
+	<link rel="stylesheet" type="text/css" href="../../style/base.css" />
+	<link rel="stylesheet" href="css/usebikewebone.css" />
+	<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/usebikewebone.js" type="text/javascript" charset="utf-8"></script>
+	<link rel="shortcut icon" href="../../logo.ico"/>
+	
+</head>
+<body>
+	<div class="usebikeweb">
+		<div class="usebikeweb-img"></div>
+		<div class="usebikeweb-input">
+			<input type="text" placeholder="请输入车牌号" maxlength="4"/>
+			<div class="usebikeweb-input-btn"></div>
+		</div>
+		<div class="usebikeweb-text">输入车牌号，获取解锁码哦~~~</div>
+	</div>
+	
+	
+	
+	
+	<input type="button" name="saomiao" id="saomiao" value="去扫描并且解析二维码" />
+	<script type="text/javascript">
+		$(function(){
+			$('#saomiao').click(function(){
+				location.href = 'saomiao.html';
+			});
+		});
+	</script>
+</body>
+</html>

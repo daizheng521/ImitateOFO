@@ -1,0 +1,319 @@
+@charset "utf-8";
+/*顶部标题*/
+.top-title{
+	width:100%;
+	height:3rem;
+	background-color:#FE9345;
+	margin:0 auto;
+	font-size:0;
+}
+
+/*返回按钮*/
+.top-title div,.top-title a{
+	display:inline-block;
+	vertical-align: top;
+}
+.top-title-return{
+	display:block;
+	width:20%;
+	height:3rem;
+	background: url(../img/return.png)center no-repeat;
+	background-size:30% 1.4rem;
+}
+.top-title-text{
+	width:70%;
+	height:3rem;
+	text-align: center;
+	line-height: 3rem;
+	color:#fff;
+	font-size:1.2rem;
+	
+}
+
+/*进度条*/
+.progress-bar{
+	width:100%;
+	height:8rem;
+	background-color: #FE9345;
+	margin:0 auto;
+	position: relative;
+}
+.progress-bar-top-line{
+	width:61%;
+	border-top:1px solid rgba(255,255,255,0.7);
+	position: absolute;
+	top:1.5rem;
+	left:20%;
+}
+
+
+
+
+/*进度条上半部分容器*/
+.progress-bar-top{
+	width:90%;
+	height:4rem;
+	margin:0 auto;
+	font-size:0;
+	position: relative;
+}
+
+/*四个div块，承载圆形*/
+.progress-bar-top-div{
+	width:24%;
+	height:3rem;
+	display:inline-block;
+	vertical-align: middle;
+}
+.progress-bar-top-div-true1{
+	width:40%;
+	height:1.6rem;
+	margin:0 auto;
+	-webkit-transform:translateY(40%);
+	background-color:rgba(255,255,255,0.3);
+	border-radius: 50%;
+}
+.progress-bar-top-div-true1 img{
+	width:60%;
+	height:0.8rem;
+	margin:0.4rem 20%;
+}
+
+.progress-bar-top-div-underway{
+	width:30%;
+	height:1.2rem;
+	margin:0 auto;
+	-webkit-transform:translateY(70%);
+	background-color:rgba(255,255,255,0.3);
+	border-radius: 50%;
+}
+.progress-bar-top-div-underway-solid{
+	-webkit-transform:translateY(20%);
+	width:60%;
+	height:0.8rem;
+	margin:0 auto;
+	background-color: #fff;
+	border-radius: 50%;
+}
+.progress-bar-top-div-unfinished{
+	position: absolute;
+	top:1.2rem;
+	margin-left:10%;
+	width:0.7rem;
+	height:0.7rem;
+	background-color:rgba(255,255,255,0.7);
+	border-radius: 50%;
+}
+
+/*下半部分的文本样式*/
+.progress-bar-bottom{
+	width:90%;
+	height:4rem;
+	margin:0 auto;
+	font-size:0;
+}
+.progress-bar-bottom-text{
+	width:24%;
+	height:4rem;
+	display:inline-block;
+	vertical-align: top;
+	font-size:0.9rem;
+	color:#fff;
+	text-align: center;
+}
+
+
+/*押金充值提示*/
+.recharge-tips{
+	width:100%;
+	height:4rem;
+	border-bottom:1px solid rgb(219,219,219);
+}
+.recharge-tips-container div{
+	display:inline-block;
+	vertical-align: top;
+}
+.recharge-tips-container{
+	width:90%;
+	height:4rem;
+	margin:0 auto;
+	position: relative;
+}
+.recharge-tips-img{
+	width:75%;
+	height:4rem;
+}
+.recharge-tips-img img{
+	width:3rem;
+	height:3rem;
+	margin-top:0.5rem;
+}
+.recharge-tips-img div{
+	display:inline-block;
+	vertical-align: top;
+}
+.recharge-tips-img-text{
+	width:60%;
+	height:4rem;
+	text-align: center;
+	line-height: 4rem;
+}
+.recharge-tips-img-text span{
+	color:#c0c0c0;
+}
+
+
+/*人民币*/
+.recharge-tips-rmb{
+	width:20%;
+	height:4rem;
+	text-align: center;
+	line-height: 4rem;
+	font-size:1.4rem;
+}
+.recharge-tips-rmb span{
+	font-size:0.9rem;
+}
+
+
+
+/*选择支付方式*/
+#paymentway{
+	width:100%;
+	height:8rem;
+	border-bottom:1px solid rgb(219,219,219);
+}
+
+/*微信支付*/
+.paymentway-wx,.paymentway-alipay{
+	width:90%;
+	height:4rem;
+	margin:0 auto;
+	font-size:0;
+}
+.paymentway-wx-left,.paymentway-alipay-left{
+	width:70%;
+	height:4rem;
+}
+.paymentway-wx-left img{
+	margin-top:0.5rem;
+	margin-left:-0.4rem;
+}
+.paymentway-wx-left div,.paymentway-alipay-left div{
+	font-size:1rem;
+	color:#181818;
+	text-align:center;
+	line-height: 4rem;
+	position: absolute;
+	left:20%;
+}
+.paymentway-wx div,.paymentway-alipay div{
+	display:inline-block;
+	vertical-align: top;
+}
+.paymentway-wx-right,.paymentway-alipay-right{
+	width:25%;
+	height:4rem;
+	position: relative;
+	text-align: right;
+	line-height: 3rem;
+}
+/*.paymentway-wx-right img,.paymentway-alipay-right img{
+	width:1rem;
+	height:1rem;
+	position: absolute;
+	right:0;
+	top:1.5rem;
+}
+*/
+
+.paymentway-alipay-left img{
+	margin-top:0.5rem;
+	width:2.4rem;
+	height:2.4rem;
+}
+.paymentway-alipay-left div{
+	
+}
+
+
+/*支付方式选择的显示和隐藏
+
+.paymentway-hide{
+	display:none;
+}
+.paymentway-show{
+	display:block;
+}
+*/
+
+
+input[type=checkbox] {
+  position: relative;
+  width: 15px;
+  height: 1px;
+  list-style-type:none;
+}
+input[type=checkbox]::before,
+input[type=checkbox]::after {
+  position: absolute;
+  display: block;
+  content: '';
+  border-radius: 50%;
+  transition: .3s all esae;
+}
+input[type=checkbox]::before {
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #c0c0c0;
+}
+input[type=checkbox]::after {
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+}
+
+input[type=checkbox]:checked::after {
+	
+  background: url(../img/true2.png)center no-repeat;
+  background-size:1rem 1rem;
+}
+
+
+/*三个信息条*/
+.message-bar{
+	width:90%;
+	height:4rem;
+	margin:2rem auto 0;
+}
+.message-bar ul li{
+	font-size:0.8rem;
+	color:#909090;
+}
+.message-bar ul li span{
+	display:inline-block;
+	width:5px;
+	height:5px;
+	background-color:#909090;
+	border-radius: 50%;
+	margin-right:1rem;
+	margin-left:1rem;
+}
+
+
+/*充值按钮*/
+
+.recharge-btn{
+	width:90%;
+	height:3rem;
+	background-color: #FE9345;
+	border-radius: 5px;
+	position: fixed;
+	bottom:1rem;
+	color:#fff;
+	text-align: center;
+	line-height: 3rem;
+	margin-left:5%;
+}
